@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {"stepNo": 1, "stepKey": "brief", "skillId": "activity-step-brief", "version": "1.0.0", "file": "v1/01-brief.md"},
+    {"stepNo": 2, "stepKey": "research", "skillId": "activity-step-research", "version": "1.0.0", "file": "v1/02-research.md"},
+    {"stepNo": 3, "stepKey": "theme", "skillId": "activity-step-theme", "version": "1.0.0", "file": "v1/03-theme.md"},
+    {"stepNo": 4, "stepKey": "content_space", "skillId": "activity-step-content_space", "version": "1.0.0", "file": "v1/04-content_space.md"},
+    {"stepNo": 5, "stepKey": "budget", "skillId": "activity-step-budget", "version": "1.0.0", "file": "v1/05-budget.md"},
+    {"stepNo": 6, "stepKey": "promotion", "skillId": "activity-step-promotion", "version": "1.0.0", "file": "v1/06-promotion.md"},
+    {"stepNo": 7, "stepKey": "execution_plan", "skillId": "activity-step-execution_plan", "version": "1.0.0", "file": "v1/07-execution_plan.md"},
+    {"stepNo": 8, "stepKey": "channel_business", "skillId": "activity-step-channel_business", "version": "1.0.0", "file": "v1/08-channel_business.md"},
+    {"stepNo": 9, "stepKey": "review", "skillId": "activity-step-review", "version": "1.0.0", "file": "v1/09-review.md"}
+  ]
+}

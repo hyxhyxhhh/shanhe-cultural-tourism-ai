@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: #f3f5f1; }
+body {
+  margin: 0;
+  background: #f3f5f1;
+  color: #162724;
+  font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 14px;
+}
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-thumb { background: #b9c4bf; border-radius: 99px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@layer components {
+  .page-card { @apply rounded-card border border-line bg-white shadow-card; }
+  .eyebrow { @apply text-[9px] font-medium uppercase tracking-[.24em] text-[#8d7852]; }
+  .quiet-button { @apply rounded-md border border-line bg-white px-3 py-2 text-xs font-medium text-ink transition hover:border-moss hover:bg-mist active:scale-[.98]; }
+  .primary-button { @apply rounded-md bg-forest px-4 py-2 text-xs font-medium text-white transition hover:bg-pine active:scale-[.98] disabled:cursor-not-allowed disabled:opacity-45; }
+  .status-chip { @apply inline-flex items-center rounded-full bg-[#e5efeb] px-2 py-1 text-[10px] font-medium text-[#356458]; }
+}
+
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+.loading-shimmer { background: linear-gradient(90deg,#edf2ef 20%,#f8faf8 45%,#edf2ef 70%); background-size: 200% 100%; animation: shimmer 1.3s linear infinite; }
+
+@keyframes login-slide-left {
+  from { opacity: 0; transform: translateX(-72px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes login-slide-right {
+  from { opacity: 0; transform: translateX(72px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.login-slide-from-left { animation: login-slide-left 700ms ease-out both; }
+.login-slide-from-right { animation: login-slide-right 760ms 80ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .login-slide-from-left,
+  .login-slide-from-right { animation: none; }
+}
